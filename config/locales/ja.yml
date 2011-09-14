@@ -1,0 +1,5 @@
+# English strings go here for Rails i18n
+ja:
+  label_svn_authzs: "SVNアカウント管理"
+  project_module_svn_account_manager: "SVNアカウント管理"
+  permission_view_svn_authzs: "SVNアカウントの管理"

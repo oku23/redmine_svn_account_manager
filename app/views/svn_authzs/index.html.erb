@@ -1,1 +1,6 @@
-<h2>SvnAuthzs#index</h2>
+<h2><%= l(:label_svn_authzs)%></h2>
+<% if(@directories.blank?) %>
+  <p class="nodata"><%= l(:label_no_data)%></p>
+<% else %>
+  <%=h @directories.size %>
+<% end %>

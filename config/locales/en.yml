@@ -1,3 +1,5 @@
 # English strings go here for Rails i18n
 en:
-  my_label: "My label"
+  label_svn_authzs: "Svn Account Manage"
+  project_module_svn_account_manager: "Svn Account Manager"
+  permission_view_svn_authzs: "Svn Account Manage"

@@ -7,4 +7,10 @@ Redmine::Plugin.register :redmine_svn_account_manager do
   version '0.0.1'
   url 'https://github.com/oku23/redmine_svn_account_manager'
   author_url 'https://github.com/oku23'
+  
+  project_module :svn_account_manager do
+    permission :view_svn_authzs, :svn_authzs => [:index],:require => :member
+  end
+  
+  menu :project_menu, :svn_authzs, { :controller => 'svn_authzs', :action => 'index' }
 end
