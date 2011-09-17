@@ -1,4 +1,5 @@
 <%= error_messages_for 'directory' %>
-<div class="box">
-  <p><%= form.text_field :path, :size => 256, :required => true %></p>
-</div>
+<p>
+<label style="display: block"><%= l(:field_path) %>:</label>
+<%= form.text_field :path, :size => 40, :required => true %>
+</p>

@@ -1,13 +1,39 @@
 <h2><%= l(:label_svn_authzs)%></h2>
 
-<h3><%= l(:label_path_new)%></h3>
-<% labelled_tabular_form_for :svn_directory, @directory, {:url => '/svn_authzs/new/' + @project.identifier} do |form| %>
-  <%= render :partial => 'form_svn_direcroty', :locals => {:form => form}%>
-  <%= form.submit l(:button_create) %>
-<% end %>
+<div class="splitcontentright" style="width: 30%">
+    <fieldset>
+    <legend><%= l(:label_path_new)%></legend>
+    <% form_for :svn_directory, nil, {:url => '/svn_authzs/new/' + @project.identifier} do |form| %>
+        <%= render :partial => 'form_svn_direcroty', :locals => {:form => form}%>
+        <%= form.submit l(:button_create) %>
+    <% end %>
+    </fieldset>
+</div>
 
-<% if(@directories.blank?) %>
-  <p class="nodata"><%= l(:label_no_data)%></p>
-<% else %>
-  <%=h @directories.size %>
-<% end %>
+
+<div class="splitcontentleft" style="width: 68%">
+    <h3><%= l(:label_svn_authz_info)%></h3>
+    <% if(@directories.blank?) %>
+        <p class="nodata"><%= l(:label_no_data)%></p>
+    <% else %>
+        <% @directories.each do |directory| %>
+		<p>
+	        <table class="list">
+	            <caption>[<%=h directory.path %>]</caption>
+	            <thead>
+					<th><%= l(:label_svn_member)%></th>
+					<th><%= l(:label_svn_read) %></th>
+					<th><%= l(:label_svn_write) %></th>
+				</thead>
+	            <tbody>
+	                <tr>
+						<td>a</td>
+						<td>b</td>
+						<td>c</td>
+					</tr>
+	            </tbody>
+	        </table>
+		</p>
+        <% end %>
+    <% end %>
+</div>

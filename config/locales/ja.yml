@@ -6,3 +6,9 @@ ja:
   permission_new_svn_directory: "ディレクトリの追加"
   label_path_new: "新しいディレクトリを追加"
   succcessful_create_svn_directory: "新しいディレクトリを作成しました。"
+  field_path: "ディレクトリパス"
+  label_svn_authz_info: "SVNアクセス権設定情報"
+  label_svn_member: "ユーザ／グループ"
+  label_svn_read: "読込み"
+  label_svn_write: "書込み"
+      
