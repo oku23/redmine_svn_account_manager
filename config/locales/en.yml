@@ -3,3 +3,8 @@ en:
   label_svn_authzs: "Svn Account Manage"
   project_module_svn_account_manager: "Svn Account Manager"
   permission_view_svn_authzs: "Svn Account Manage"
+  permission_new_svn_directory: "add svn directory"
+  label_path_new: "add svn directory"
+  succcessful_create_svn_directory: "new directory created."
+  field_path: "path"
+  

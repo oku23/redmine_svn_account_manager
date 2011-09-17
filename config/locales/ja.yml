@@ -3,3 +3,6 @@ ja:
   label_svn_authzs: "SVNアカウント管理"
   project_module_svn_account_manager: "SVNアカウント管理"
   permission_view_svn_authzs: "SVNアカウントの管理"
+  permission_new_svn_directory: "ディレクトリの追加"
+  label_path_new: "新しいディレクトリを追加"
+  succcessful_create_svn_directory: "新しいディレクトリを作成しました。"

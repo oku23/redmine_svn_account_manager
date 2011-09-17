@@ -1,4 +1,11 @@
 <h2><%= l(:label_svn_authzs)%></h2>
+
+<h3><%= l(:label_path_new)%></h3>
+<% labelled_tabular_form_for :svn_directory, @directory, {:url => '/svn_authzs/new/' + @project.identifier} do |form| %>
+  <%= render :partial => 'form_svn_direcroty', :locals => {:form => form}%>
+  <%= form.submit l(:button_create) %>
+<% end %>
+
 <% if(@directories.blank?) %>
   <p class="nodata"><%= l(:label_no_data)%></p>
 <% else %>
