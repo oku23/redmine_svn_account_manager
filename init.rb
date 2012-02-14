@@ -9,7 +9,7 @@ Redmine::Plugin.register :redmine_svn_account_manager do
   author_url 'https://github.com/oku23'
   
   project_module :svn_account_manager do
-    permission :view_svn_authzs, :svn_authzs => [:index,:new],:require => :member
+    permission :view_svn_authzs, {:svn_authzs => [:index],:svn_directories => [:new]}, :require => :member
   end
   
   menu :project_menu, :svn_authzs, { :controller => 'svn_authzs', :action => 'index' }
