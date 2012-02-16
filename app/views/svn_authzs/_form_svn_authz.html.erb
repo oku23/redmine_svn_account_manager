@@ -5,7 +5,7 @@
 	<label style="display: block"><%= l(:field_user) %>:</label>
 	<%= select(:svn_authz, :user_id, @users.collect{|i| [i.firstname + ' ' + i.lastname, i.id]}) %>
 	<label style="display: block"><%= l(:field_readable) %>:</label>
-	<%= check_box(:svn_authz, "readable") %>
+	<%= check_box(:svn_authz, :readable) %>
 	<label style="display: block"><%= l(:field_writable) %>:</label>
-	<%= check_box(:svn_authz, "writable") %>
+	<%= check_box(:svn_authz, :writable) %>
 </p>
