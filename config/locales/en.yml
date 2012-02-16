@@ -7,9 +7,13 @@ en:
   label_path_new: "add svn directory"
   succcessful_create_svn_directory: "new directory created."
   field_path: "path"
+  field_user: "user"
+  field_readable: "readable"
+  field_writable: "writable"
   label_svn_authz_info: "SVN authorization infomation"
   label_svn_member: "user/group"
   label_svn_read: "read"
   label_svn_write: "write"
+  label_authz_add: "directory authorization added."
   
   

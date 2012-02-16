@@ -2,7 +2,6 @@ class SvnDirectoriesController < ApplicationController
   unloadable
   before_filter :find_project, :authorize
 
-#test
   def new
     @directory = SvnDirectory.new(params[:svn_directory])
     @directory.project_id = @project.id

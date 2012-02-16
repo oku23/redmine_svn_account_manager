@@ -8,6 +8,13 @@
         <%= form.submit l(:button_create) %>
     <% end %>
     </fieldset>
+    <fieldset>
+    <legend><%= l(:label_authz_add)%></legend>
+    <% form_for :svn_authz, nil, {:url => '/svn_authzs/new/' + @project.identifier} do |form| %>
+        <%= render :partial => 'form_svn_authz', :locals => {:form => form}%>
+        <%= form.submit l(:button_add) %>
+    <% end %>
+    </fieldset>
 </div>
 
 
