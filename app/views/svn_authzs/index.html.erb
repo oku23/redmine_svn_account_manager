@@ -4,7 +4,7 @@
     <fieldset>
     <legend><%= l(:label_path_new)%></legend>
     <% form_for :svn_directory, nil, {:url => '/svn_directories/new/' + @project.identifier} do |form| %>
-        <%= render :partial => 'form_svn_direcroty', :locals => {:form => form}%>
+        <%= render :partial => 'form_svn_directory', :locals => {:form => form}%>
         <%= form.submit l(:button_create) %>
     <% end %>
     </fieldset>
